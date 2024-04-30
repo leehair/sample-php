@@ -10,5 +10,5 @@ if(isset($_GET['message']) && $_GET['message'] != '') {
 	$text = htmlspecialchars($_GET['message']);
 }
 
-$cow = Farm::create(\Cowsayphp\Farm\Cow::class);
+$cow = Farm::create(\Cowsayphp\Farm\Whale::class);
 echo $cow->say($text);
